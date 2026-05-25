@@ -1,5 +1,4 @@
 import os
-from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import (
     ApplicationBuilder,
@@ -10,7 +9,7 @@ from telegram.ext import (
 )
 from openai import OpenAI
 
-load_dotenv()
+
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
